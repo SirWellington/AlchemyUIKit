@@ -9,6 +9,6 @@ AlchemyUIKit
 AlchemyUIKit is a set of extensions that bring new Looks to iOS.
 
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/SirWellington/AlchemyGenerator.svg?branch=develop)](https://travis-ci.org/SirWellington/AlchemyGenerator)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/SirWellington/AlchemyUIKit.svg?branch=develop)](https://travis-ci.org/SirWellington/AlchemyUIKit)
 
 ---
