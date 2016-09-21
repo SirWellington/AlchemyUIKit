@@ -10,6 +10,8 @@
 		DEDB43121D92557900BF092E /* AlchemyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDB43081D92557800BF092E /* AlchemyUIKit.framework */; };
 		DEDB43171D92557900BF092E /* AlchemyUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB43161D92557900BF092E /* AlchemyUIKitTests.swift */; };
 		DEDB43191D92557900BF092E /* AlchemyUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DEDB430B1D92557800BF092E /* AlchemyUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEDB43461D9255E600BF092E /* AlchemyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB43451D9255E600BF092E /* AlchemyView.swift */; };
+		DEDB43481D92566B00BF092E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB43471D92566B00BF092E /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		DEDB43111D92557900BF092E /* AlchemyUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlchemyUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDB43161D92557900BF092E /* AlchemyUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemyUIKitTests.swift; sourceTree = "<group>"; };
 		DEDB43181D92557900BF092E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEDB43451D9255E600BF092E /* AlchemyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlchemyView.swift; sourceTree = "<group>"; };
+		DEDB43471D92566B00BF092E /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				DEDB430B1D92557800BF092E /* AlchemyUIKit.h */,
 				DEDB430C1D92557800BF092E /* Info.plist */,
+				DEDB43451D9255E600BF092E /* AlchemyView.swift */,
+				DEDB43471D92566B00BF092E /* Colors.swift */,
 			);
 			path = AlchemyUIKit;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 					DEDB43071D92557800BF092E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = D76X37A2FG;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					DEDB43101D92557900BF092E = {
@@ -198,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDB43481D92566B00BF092E /* Colors.swift in Sources */,
+				DEDB43461D9255E600BF092E /* AlchemyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +331,7 @@
 		DEDB431D1D92557900BF092E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D76X37A2FG;
@@ -334,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.sirwellington.AlchemyUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +352,7 @@
 		DEDB431E1D92557900BF092E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D76X37A2FG;
@@ -360,6 +372,7 @@
 		DEDB43201D92557900BF092E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = D76X37A2FG;
 				INFOPLIST_FILE = AlchemyUIKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +385,7 @@
 		DEDB43211D92557900BF092E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = D76X37A2FG;
 				INFOPLIST_FILE = AlchemyUIKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
