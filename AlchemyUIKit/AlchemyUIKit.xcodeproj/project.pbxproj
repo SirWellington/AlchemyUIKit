@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13F2D5BC22D4ED0C006887B2 /* AlchemyView.swift in Headers */ = {isa = PBXBuildFile; fileRef = DEDB43451D9255E600BF092E /* AlchemyView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEDB43121D92557900BF092E /* AlchemyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDB43081D92557800BF092E /* AlchemyUIKit.framework */; };
 		DEDB43171D92557900BF092E /* AlchemyUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB43161D92557900BF092E /* AlchemyUIKitTests.swift */; };
 		DEDB43191D92557900BF092E /* AlchemyUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DEDB430B1D92557800BF092E /* AlchemyUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -100,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDB43191D92557900BF092E /* AlchemyUIKit.h in Headers */,
+				13F2D5BC22D4ED0C006887B2 /* AlchemyView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
