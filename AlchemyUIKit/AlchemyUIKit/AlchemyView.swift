@@ -9,8 +9,10 @@
 import Foundation
 import UIKit
 
-@IBDesignable public class AlchemyView: UIView
+@IBDesignable
+public class AlchemyView: UIView
 {
+    
     override public init(frame: CGRect)
     {
         super.init(frame: frame)
