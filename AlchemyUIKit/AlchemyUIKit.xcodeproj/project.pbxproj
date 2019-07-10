@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		13F2D5BC22D4ED0C006887B2 /* AlchemyView.swift in Headers */ = {isa = PBXBuildFile; fileRef = DEDB43451D9255E600BF092E /* AlchemyView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		13F2D5E622D63DDB006887B2 /* AlchemyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2D5E522D63DDB006887B2 /* AlchemyButton.swift */; };
+		13F2D5E822D63E6A006887B2 /* Views+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2D5E722D63E6A006887B2 /* Views+.swift */; };
+		13F2D5E922D63F7F006887B2 /* AlchemyButton.swift in Headers */ = {isa = PBXBuildFile; fileRef = 13F2D5E522D63DDB006887B2 /* AlchemyButton.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEDB43121D92557900BF092E /* AlchemyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDB43081D92557800BF092E /* AlchemyUIKit.framework */; };
 		DEDB43171D92557900BF092E /* AlchemyUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB43161D92557900BF092E /* AlchemyUIKitTests.swift */; };
 		DEDB43191D92557900BF092E /* AlchemyUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DEDB430B1D92557800BF092E /* AlchemyUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13F2D5E522D63DDB006887B2 /* AlchemyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemyButton.swift; sourceTree = "<group>"; };
+		13F2D5E722D63E6A006887B2 /* Views+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views+.swift"; sourceTree = "<group>"; };
 		DEDB43081D92557800BF092E /* AlchemyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlchemyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDB430B1D92557800BF092E /* AlchemyUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlchemyUIKit.h; sourceTree = "<group>"; };
 		DEDB430C1D92557800BF092E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,8 +83,10 @@
 			children = (
 				DEDB430B1D92557800BF092E /* AlchemyUIKit.h */,
 				DEDB430C1D92557800BF092E /* Info.plist */,
+				13F2D5E522D63DDB006887B2 /* AlchemyButton.swift */,
 				DEDB43451D9255E600BF092E /* AlchemyView.swift */,
 				DEDB43471D92566B00BF092E /* Colors.swift */,
+				13F2D5E722D63E6A006887B2 /* Views+.swift */,
 			);
 			path = AlchemyUIKit;
 			sourceTree = "<group>";
@@ -101,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDB43191D92557900BF092E /* AlchemyUIKit.h in Headers */,
+				13F2D5E922D63F7F006887B2 /* AlchemyButton.swift in Headers */,
 				13F2D5BC22D4ED0C006887B2 /* AlchemyView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F2D5E822D63E6A006887B2 /* Views+.swift in Sources */,
+				13F2D5E622D63DDB006887B2 /* AlchemyButton.swift in Sources */,
 				DEDB43481D92566B00BF092E /* Colors.swift in Sources */,
 				DEDB43461D9255E600BF092E /* AlchemyView.swift in Sources */,
 			);

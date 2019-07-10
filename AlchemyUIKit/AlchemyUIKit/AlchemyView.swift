@@ -3,7 +3,7 @@
 //  AlchemyUIKit
 //
 //  Created by Wellington Moreno on 9/20/16.
-//  Copyright © 2016 Sir Wellington. All rights reserved.
+//  Copyright © 2019 Sir Wellington. All rights reserved.
 //
 
 import Foundation
@@ -68,7 +68,7 @@ public class AlchemyView: UIView
         }
     }
     
-    @IBInspectable public var shadowColor: UIColor = Colors.fromRGBA(red: 0, green: 0, blue: 0, alpha: 50)
+    @IBInspectable public var shadowColor: UIColor = .fromRGBA(red: 0, green: 0, blue: 0, alpha: 50)
     {
         didSet
         {
