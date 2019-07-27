@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-open class AlchemyCheckbox: UIControl
+public class AlchemyCheckbox: UIControl
 {
     
     ///Used to choose the shape for the Checkbox
