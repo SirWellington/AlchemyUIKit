@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		131C7A0822ECE68A0001E084 /* AlchemyCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131C7A0722ECE68A0001E084 /* AlchemyCheckbox.swift */; };
 		131C7A0A22ECE72B0001E084 /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131C7A0922ECE72B0001E084 /* Sample.storyboard */; };
+		131C7A0B22ECEC820001E084 /* AlchemyCheckbox.swift in Headers */ = {isa = PBXBuildFile; fileRef = 131C7A0722ECE68A0001E084 /* AlchemyCheckbox.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		13F2D5BC22D4ED0C006887B2 /* AlchemyView.swift in Headers */ = {isa = PBXBuildFile; fileRef = DEDB43451D9255E600BF092E /* AlchemyView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		13F2D5E622D63DDB006887B2 /* AlchemyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2D5E522D63DDB006887B2 /* AlchemyButton.swift */; };
 		13F2D5E822D63E6A006887B2 /* Views+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2D5E722D63E6A006887B2 /* Views+.swift */; };
@@ -115,6 +116,7 @@
 			files = (
 				DEDB43191D92557900BF092E /* AlchemyUIKit.h in Headers */,
 				13F2D5E922D63F7F006887B2 /* AlchemyButton.swift in Headers */,
+				131C7A0B22ECEC820001E084 /* AlchemyCheckbox.swift in Headers */,
 				13F2D5BC22D4ED0C006887B2 /* AlchemyView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
