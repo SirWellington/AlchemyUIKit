@@ -13,7 +13,6 @@ public class AlchemyCheckbox: UIControl
 {
     
     ///Used to choose the shape for the Checkbox
-    @objc
     public enum CheckType: Int
     {
         /// ■
@@ -39,7 +38,7 @@ public class AlchemyCheckbox: UIControl
     }
     
     @IBInspectable
-    var checkTypeInt: Int  = CheckType.circle.rawValue
+    public var checkTypeInt: Int  = CheckType.circle.rawValue
     {
         didSet
         {
@@ -50,7 +49,7 @@ public class AlchemyCheckbox: UIControl
         }
     }
     
-    var checkType: CheckType = .circle
+    public var checkType: CheckType = .circle
     {
         didSet
         {
@@ -59,7 +58,7 @@ public class AlchemyCheckbox: UIControl
     }
     
     @IBInspectable
-    var borderStyleInt: Int = BorderStyle.roundedSquare.rawValue
+    public var borderStyleInt: Int = BorderStyle.roundedSquare.rawValue
     {
         didSet
         {
@@ -70,7 +69,7 @@ public class AlchemyCheckbox: UIControl
         }
     }
     
-    var borderStyle: BorderStyle = .roundedSquare
+    public var borderStyle: BorderStyle = .roundedSquare
     {
         didSet
         {
@@ -79,33 +78,33 @@ public class AlchemyCheckbox: UIControl
     }
     
     @IBInspectable
-    var corderRadius: CGFloat = 4
+    public var corderRadius: CGFloat = 4
     
     @IBInspectable
-    var borderWidth: CGFloat = 1.75
+    public var borderWidth: CGFloat = 1.75
     
-    var checkmarkSize: CGFloat = 0.5
-    
-    @IBInspectable
-    var uncheckedBorderColor: UIColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+    public var checkmarkSize: CGFloat = 0.5
     
     @IBInspectable
-    var checkedBorderColor: UIColor = #colorLiteral(red: 0, green: 0.3285208941, blue: 0.5748849511, alpha: 1)
+    public var uncheckedBorderColor: UIColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
     
     @IBInspectable
-    var checkmarkColor: UIColor = #colorLiteral(red: 0, green: 0.3285208941, blue: 0.5748849511, alpha: 1)
+    public var checkedBorderColor: UIColor = #colorLiteral(red: 0, green: 0.3285208941, blue: 0.5748849511, alpha: 1)
     
     @IBInspectable
-    var checkboxBackgroundColor: UIColor! = .white
+    public var checkmarkColor: UIColor = #colorLiteral(red: 0, green: 0.3285208941, blue: 0.5748849511, alpha: 1)
+    
+    @IBInspectable
+    public var checkboxBackgroundColor: UIColor! = .white
     
     //Used to increase the touchable are for the component
-    var increasedTouchRadius: CGFloat = 5
+    public var increasedTouchRadius: CGFloat = 5
     
     //By default it is true
-    var useHapticFeedback: Bool = true
+    public var useHapticFeedback: Bool = true
     
     @IBInspectable
-    var isChecked: Bool = false
+    public var isChecked: Bool = false
     {
         didSet
         {
@@ -160,53 +159,6 @@ public class AlchemyCheckbox: UIControl
         }
     }
     
-    open override func draw(_ rect: CGRect)
-    {
-        //Draw the outlined component
-        let newRect = rect.insetBy(dx: borderWidth / 2, dy: borderWidth / 2)
-        
-        let context = UIGraphicsGetCurrentContext()!
-        context.setStrokeColor(self.isChecked ? checkedBorderColor.cgColor : tintColor.cgColor)
-        context.setFillColor(checkboxBackgroundColor.cgColor)
-        context.setLineWidth(borderWidth)
-        
-        var shapePath: UIBezierPath
-        switch self.borderStyle
-        {
-            case .square:
-                shapePath = UIBezierPath(rect: newRect)
-            case .roundedSquare:
-                shapePath = UIBezierPath(roundedRect: newRect, cornerRadius: self.corderRadius)
-            case .rounded:
-                shapePath = UIBezierPath(ovalIn: newRect)
-        }
-        
-        context.addPath(shapePath.cgPath)
-        context.strokePath()
-        context.fillPath()
-        
-        //When it is selected, depends on the style
-        //By using helper methods, draw the inner part of the component UI.
-        if isChecked
-        {
-            
-            switch self.checkType
-            {
-                case .square:
-                    self.drawInnerSquare(frame: newRect)
-                
-                case .circle:
-                    self.drawCircle(frame: newRect)
-                
-                case .cross:
-                    self.drawCross(frame: newRect)
-                
-                case .tick:
-                    self.drawCheckMark(frame: newRect)
-            }
-        }
-    }
-    
     open override func layoutSubviews()
     {
         super.layoutSubviews()
@@ -229,6 +181,62 @@ public class AlchemyCheckbox: UIControl
         let hitTestEdgeInsets = UIEdgeInsets(top: -increasedTouchRadius, left: -increasedTouchRadius, bottom: -increasedTouchRadius, right: -increasedTouchRadius)
         let hitFrame = relativeFrame.inset(by: hitTestEdgeInsets)
         return hitFrame.contains(point)
+    }
+    
+}
+
+
+//=========================================
+//MARK: DRAWING
+//=========================================
+private extension AlchemyCheckbox
+{
+    
+    public override func draw(_ rect: CGRect)
+    {
+        //Draw the outlined component
+        let newRect = rect.insetBy(dx: borderWidth / 2, dy: borderWidth / 2)
+        
+        let context = UIGraphicsGetCurrentContext()!
+        context.setStrokeColor(self.isChecked ? checkedBorderColor.cgColor : tintColor.cgColor)
+        context.setFillColor(checkboxBackgroundColor.cgColor)
+        context.setLineWidth(borderWidth)
+        
+        var shapePath: UIBezierPath
+        switch self.borderStyle
+        {
+        case .square:
+            shapePath = UIBezierPath(rect: newRect)
+        case .roundedSquare:
+            shapePath = UIBezierPath(roundedRect: newRect, cornerRadius: self.corderRadius)
+        case .rounded:
+            shapePath = UIBezierPath(ovalIn: newRect)
+        }
+        
+        context.addPath(shapePath.cgPath)
+        context.strokePath()
+        context.fillPath()
+        
+        //When it is selected, depends on the style
+        //By using helper methods, draw the inner part of the component UI.
+        if isChecked
+        {
+            
+            switch self.checkType
+            {
+            case .square:
+                self.drawInnerSquare(frame: newRect)
+                
+            case .circle:
+                self.drawCircle(frame: newRect)
+                
+            case .cross:
+                self.drawCross(frame: newRect)
+                
+            case .tick:
+                self.drawCheckMark(frame: newRect)
+            }
+        }
     }
     
     //Draws tick inside the component
