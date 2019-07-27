@@ -12,9 +12,9 @@ import UIKit
 open class AlchemyCheckbox: UIControl
 {
     
-    ///Used to choose the style for the Checkbox
+    ///Used to choose the shape for the Checkbox
     @objc
-    public enum Style: Int
+    public enum CheckType: Int
     {
         /// ■
         case square
@@ -39,18 +39,18 @@ open class AlchemyCheckbox: UIControl
     }
     
     @IBInspectable
-    var styleInt: Int  = Style.circle.rawValue
+    var checkTypeInt: Int  = CheckType.circle.rawValue
     {
         didSet
         {
-            if let newStyle = Style(rawValue: styleInt)
+            if let newShape = CheckType(rawValue: checkTypeInt)
             {
-                style = newStyle
+                checkType = newShape
             }
         }
     }
     
-    var style: Style = .circle
+    var checkType: CheckType = .circle
     {
         didSet
         {
@@ -190,7 +190,7 @@ open class AlchemyCheckbox: UIControl
         if isChecked
         {
             
-            switch self.style
+            switch self.checkType
             {
                 case .square:
                     self.drawInnerSquare(frame: newRect)
