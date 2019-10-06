@@ -36,6 +36,14 @@ public class AlchemyView: UIView
         }
     }
     
+    @IBInspectable public var cornerRadius: CGFloat = 0
+        {
+        didSet
+        {
+            updateView()
+        }
+    }
+    
     @IBInspectable public var borderThickness: CGFloat = 0
     {
         didSet
@@ -95,7 +103,7 @@ public class AlchemyView: UIView
         }
         else
         {
-            layer.cornerRadius = 0
+            layer.cornerRadius = cornerRadius
             layer.masksToBounds = false
         }
         
