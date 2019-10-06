@@ -37,7 +37,7 @@ public class AlchemyView: UIView
     }
     
     @IBInspectable public var cornerRadius: CGFloat = 0
-        {
+    {
         didSet
         {
             updateView()
@@ -94,7 +94,6 @@ public class AlchemyView: UIView
     
     private func updateView()
     {
-    
         if circular
         {
             let radius = self.frame.width / 2
@@ -104,7 +103,6 @@ public class AlchemyView: UIView
         else
         {
             layer.cornerRadius = cornerRadius
-            layer.masksToBounds = false
         }
         
         layer.borderWidth = borderThickness
