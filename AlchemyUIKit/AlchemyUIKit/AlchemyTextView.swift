@@ -12,6 +12,24 @@ import UIKit
 @IBDesignable
 public class AlchemyTextView: UITextView
 {
+    
+    public override init(frame: CGRect, textContainer: NSTextContainer?)
+    {
+        super.init(frame: frame, textContainer: textContainer)
+        updateView()
+    }
+    
+    public required init?(coder aDecoder: NSCoder)
+    {
+        super.init(coder: aDecoder)
+        updateView()
+    }
+    
+    deinit
+    {
+        super.delegate = nil
+    }
+    
     //======================================
     // MARK: IBInspectable properties
     //======================================
