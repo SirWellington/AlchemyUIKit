@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130E2447238E5FFC0047EEB7 /* AlchemyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130E2446238E5FFC0047EEB7 /* AlchemyTextView.swift */; };
 		131C7A0822ECE68A0001E084 /* AlchemyCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131C7A0722ECE68A0001E084 /* AlchemyCheckbox.swift */; };
 		131C7A0A22ECE72B0001E084 /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131C7A0922ECE72B0001E084 /* Sample.storyboard */; };
 		131C7A0B22ECEC820001E084 /* AlchemyCheckbox.swift in Headers */ = {isa = PBXBuildFile; fileRef = 131C7A0722ECE68A0001E084 /* AlchemyCheckbox.swift */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130E2446238E5FFC0047EEB7 /* AlchemyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemyTextView.swift; sourceTree = "<group>"; };
 		131C7A0722ECE68A0001E084 /* AlchemyCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemyCheckbox.swift; sourceTree = "<group>"; };
 		131C7A0922ECE72B0001E084 /* Sample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sample.storyboard; sourceTree = "<group>"; };
 		13F2D5E522D63DDB006887B2 /* AlchemyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemyButton.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				DEDB430C1D92557800BF092E /* Info.plist */,
 				13F2D5E522D63DDB006887B2 /* AlchemyButton.swift */,
 				131C7A0722ECE68A0001E084 /* AlchemyCheckbox.swift */,
+				130E2446238E5FFC0047EEB7 /* AlchemyTextView.swift */,
 				DEDB43451D9255E600BF092E /* AlchemyView.swift */,
 				DEDB43471D92566B00BF092E /* Colors.swift */,
 				13F2D5E722D63E6A006887B2 /* Views+.swift */,
@@ -228,6 +231,7 @@
 				131C7A0822ECE68A0001E084 /* AlchemyCheckbox.swift in Sources */,
 				13F2D5E822D63E6A006887B2 /* Views+.swift in Sources */,
 				13F2D5E622D63DDB006887B2 /* AlchemyButton.swift in Sources */,
+				130E2447238E5FFC0047EEB7 /* AlchemyTextView.swift in Sources */,
 				DEDB43481D92566B00BF092E /* Colors.swift in Sources */,
 				DEDB43461D9255E600BF092E /* AlchemyView.swift in Sources */,
 			);

@@ -118,7 +118,6 @@ public class AlchemyView: UIView
         }
     }
     
-    
     override public func layoutSubviews()
     {
         super.layoutSubviews()
@@ -130,6 +129,5 @@ public class AlchemyView: UIView
         super.draw(rect)
         updateView()
     }
-    
     
 }
