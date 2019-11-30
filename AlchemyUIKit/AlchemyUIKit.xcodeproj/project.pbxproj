@@ -15,6 +15,7 @@
 		13F2D5E622D63DDB006887B2 /* AlchemyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2D5E522D63DDB006887B2 /* AlchemyButton.swift */; };
 		13F2D5E822D63E6A006887B2 /* Views+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2D5E722D63E6A006887B2 /* Views+.swift */; };
 		13F2D5E922D63F7F006887B2 /* AlchemyButton.swift in Headers */ = {isa = PBXBuildFile; fileRef = 13F2D5E522D63DDB006887B2 /* AlchemyButton.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		13F3189F2392B93700E512BD /* AlchemyTextView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 130E2446238E5FFC0047EEB7 /* AlchemyTextView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEDB43121D92557900BF092E /* AlchemyUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDB43081D92557800BF092E /* AlchemyUIKit.framework */; };
 		DEDB43171D92557900BF092E /* AlchemyUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB43161D92557900BF092E /* AlchemyUIKitTests.swift */; };
 		DEDB43191D92557900BF092E /* AlchemyUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DEDB430B1D92557800BF092E /* AlchemyUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -120,6 +121,7 @@
 				DEDB43191D92557900BF092E /* AlchemyUIKit.h in Headers */,
 				13F2D5E922D63F7F006887B2 /* AlchemyButton.swift in Headers */,
 				131C7A0B22ECEC820001E084 /* AlchemyCheckbox.swift in Headers */,
+				13F3189F2392B93700E512BD /* AlchemyTextView.swift in Headers */,
 				13F2D5BC22D4ED0C006887B2 /* AlchemyView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
