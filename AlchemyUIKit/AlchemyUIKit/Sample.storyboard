@@ -18,10 +18,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7iH-Jf-HHK" customClass="AlchemyCheckbox" customModule="AlchemyUIKit" customModuleProvider="target">
-                                <rect key="frame" x="67" y="163" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4No-fC-sMP" customClass="AlchemyTextView" customModule="AlchemyUIKit" customModuleProvider="target">
+                                <rect key="frame" x="67" y="505" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="A9h-F3-eEa"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineFragmentPadding">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7iH-Jf-HHK" customClass="AlchemyCheckbox" customModule="AlchemyUIKit" customModuleProvider="target">
+                                <rect key="frame" x="167" y="65" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IeO-al-jfp"/>
+                                    <constraint firstAttribute="width" constant="40" id="LhH-ws-lEt"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
@@ -46,6 +76,13 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GSJ-hZ-SS4" firstAttribute="bottom" secondItem="4No-fC-sMP" secondAttribute="bottom" constant="16" id="4CK-KM-DvM"/>
+                            <constraint firstItem="4No-fC-sMP" firstAttribute="leading" secondItem="GSJ-hZ-SS4" secondAttribute="leading" constant="16" id="5Pp-5l-260"/>
+                            <constraint firstItem="GSJ-hZ-SS4" firstAttribute="trailing" secondItem="4No-fC-sMP" secondAttribute="trailing" constant="16" id="DuI-IP-NDv"/>
+                            <constraint firstItem="7iH-Jf-HHK" firstAttribute="centerX" secondItem="GSJ-hZ-SS4" secondAttribute="centerX" id="U6E-zC-XkI"/>
+                            <constraint firstItem="7iH-Jf-HHK" firstAttribute="top" secondItem="GSJ-hZ-SS4" secondAttribute="top" constant="45" id="sDo-Qw-Yen"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GSJ-hZ-SS4"/>
                     </view>
                 </viewController>
