@@ -111,7 +111,6 @@ public class AlchemyView: UIView
         layer.shadowOffset = shadowOffset
         layer.shadowColor = shadowColor.cgColor
         
-        
         if shouldRasterize
         {
             layer.rasterizationScale = UIScreen.main.scale

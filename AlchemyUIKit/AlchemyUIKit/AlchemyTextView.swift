@@ -9,10 +9,32 @@
 import Foundation
 import UIKit
 
+/// This TextView allows the following additional features:
+/// 1. Placeholder text
+/// 2. Adjusting the layer properties directly from Interface Builder
+/// 3. Adjusting the text padding and line fragment directly from Interface Builder
 @IBDesignable
 public class AlchemyTextView: UITextView
 {
-    
+
+    /// In order for this text view to work properly, it must be set as the text delegate.
+    /// This override prevents an accidental un-setting of `self` as the text view delegate.
+    override public var delegate: UITextViewDelegate?
+    {
+        get { return self }
+
+        set
+        {
+            if let _ = newValue
+            {
+                super.delegate = self
+            }
+            else
+            {
+                super.delegate = nil
+            }
+        }
+    }
     public override init(frame: CGRect, textContainer: NSTextContainer?)
     {
         super.init(frame: frame, textContainer: textContainer)
@@ -154,21 +176,7 @@ public class AlchemyTextView: UITextView
             delegate?.textViewDidChange?(self)
         }
     }
-    
-    /// In order for this text view to work properly, it must be set as the text delegate.
-    /// This override prevents an accidental un-setting of `self` as the text view delegate.
-    override public var delegate: UITextViewDelegate?
-    {
-        get { return self }
-        
-        set
-        {
-            if newValue !== self
-            {
-                super.delegate = self
-            }
-        }
-    }
+
     
     override public func prepareForInterfaceBuilder()
     {
@@ -279,6 +287,7 @@ extension AlchemyTextView: UITextViewDelegate
     {
         self.placeholderLabel.isVisible = text.isEmpty
     }
+
 }
 
 //=========================================
