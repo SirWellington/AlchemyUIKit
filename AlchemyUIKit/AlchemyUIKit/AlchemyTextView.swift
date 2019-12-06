@@ -263,6 +263,7 @@ private extension AlchemyTextView
         let labelHeight = placeholderLabel.frame.height
         
         placeholderLabel.frame = CGRect(x: labelX, y: labelY, width: labelWidth, height: labelHeight)
+        placeholderLabel.numberOfLines = 0
         placeholderLabel.sizeToFit()
         
     }
