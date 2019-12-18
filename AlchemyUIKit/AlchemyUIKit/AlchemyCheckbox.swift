@@ -79,23 +79,56 @@ public class AlchemyCheckbox: UIControl
     
     @IBInspectable
     public var corderRadius: CGFloat = 4
+    {
+        didSet
+        {
+            setNeedsDisplay()
+        }
+    }
     
     @IBInspectable
     public var borderWidth: CGFloat = 1.75
+    {
+        didSet
+        {
+            setNeedsDisplay()
+        }
+    }
     
     public var checkmarkSize: CGFloat = 0.5
+    {
+        didSet
+        {
+            setNeedsDisplay()
+        }
+    }
     
     @IBInspectable
     public var uncheckedBorderColor: UIColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+    {
+        didSet
+        {
+            setNeedsDisplay()
+        }
+    }
     
     @IBInspectable
     public var checkedBorderColor: UIColor = #colorLiteral(red: 0, green: 0.3285208941, blue: 0.5748849511, alpha: 1)
+    {
+        didSet
+        {
+            setNeedsDisplay()
+        }
+    }
     
     @IBInspectable
     public var checkmarkColor: UIColor = #colorLiteral(red: 0, green: 0.3285208941, blue: 0.5748849511, alpha: 1)
-    
-    @IBInspectable
-    public var checkboxBackgroundColor: UIColor! = .white
+    {
+        didSet
+        {
+            setNeedsDisplay()
+        }
+    }
     
     //Used to increase the touchable are for the component
     public var increasedTouchRadius: CGFloat = 5
@@ -119,20 +152,13 @@ public class AlchemyCheckbox: UIControl
     public override init(frame: CGRect)
     {
         super.init(frame: frame)
-        setupViews()
     }
     
     public required init?(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
-        setupViews()
     }
-    
-    private func setupViews()
-    {
-        self.backgroundColor = .clear
-    }
-    
+
     //Define the above UIImpactFeedbackGenerator object, and prepare the engine to be ready to provide feedback.
     //To store the energy and as per the best practices, we create and make it ready on touches begin.
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
@@ -185,20 +211,24 @@ public class AlchemyCheckbox: UIControl
     
 }
 
-
 //=========================================
 //MARK: DRAWING
 //=========================================
 extension AlchemyCheckbox
 {
+    func makeImage(from context: CGContext) -> UIImage?
+    {
+        guard let image = context.makeImage() else { return nil }
+        return UIImage(cgImage: image)
+    }
+    
     public override func draw(_ rect: CGRect)
     {
         //Draw the outlined component
         let newRect = rect.insetBy(dx: borderWidth / 2, dy: borderWidth / 2)
         
         let context = UIGraphicsGetCurrentContext()!
-        context.setStrokeColor(self.isChecked ? checkedBorderColor.cgColor : tintColor.cgColor)
-        context.setFillColor(checkboxBackgroundColor.cgColor)
+        context.setStrokeColor(self.isChecked ? checkedBorderColor.cgColor : uncheckedBorderColor.cgColor)
         context.setLineWidth(borderWidth)
         
         var shapePath: UIBezierPath
@@ -212,9 +242,11 @@ extension AlchemyCheckbox
                 shapePath = UIBezierPath(ovalIn: newRect)
         }
         
+        let beforeImage = makeImage(from: context)
         context.addPath(shapePath.cgPath)
         context.strokePath()
         context.fillPath()
+        let imageAfter = makeImage(from: context)
         
         //When it is selected, depends on the style
         //By using helper methods, draw the inner part of the component UI.
@@ -245,7 +277,6 @@ private extension AlchemyCheckbox
     //Draws tick inside the component
     func drawCheckMark(frame: CGRect)
     {
-        
         //// Bezier Drawing
         let bezierPath = UIBezierPath()
         bezierPath.move(to: CGPoint(x: frame.minX + 0.26000 * frame.width, y: frame.minY + 0.50000 * frame.height))
