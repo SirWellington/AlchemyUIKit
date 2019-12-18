@@ -11,6 +11,11 @@
 		131C7A0822ECE68A0001E084 /* AlchemyCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131C7A0722ECE68A0001E084 /* AlchemyCheckbox.swift */; };
 		131C7A0A22ECE72B0001E084 /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131C7A0922ECE72B0001E084 /* Sample.storyboard */; };
 		131C7A0B22ECEC820001E084 /* AlchemyCheckbox.swift in Headers */ = {isa = PBXBuildFile; fileRef = 131C7A0722ECE68A0001E084 /* AlchemyCheckbox.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		1367C20D23AA1E6000B05CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1367C20C23AA1E6000B05CA4 /* AppDelegate.swift */; };
+		1367C20F23AA1E6000B05CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1367C20E23AA1E6000B05CA4 /* ViewController.swift */; };
+		1367C21223AA1E6000B05CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1367C21023AA1E6000B05CA4 /* Main.storyboard */; };
+		1367C21423AA1E6100B05CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1367C21323AA1E6100B05CA4 /* Assets.xcassets */; };
+		1367C21723AA1E6100B05CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1367C21523AA1E6100B05CA4 /* LaunchScreen.storyboard */; };
 		13F2D5BC22D4ED0C006887B2 /* AlchemyView.swift in Headers */ = {isa = PBXBuildFile; fileRef = DEDB43451D9255E600BF092E /* AlchemyView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		13F2D5E622D63DDB006887B2 /* AlchemyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2D5E522D63DDB006887B2 /* AlchemyButton.swift */; };
 		13F2D5E822D63E6A006887B2 /* Views+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2D5E722D63E6A006887B2 /* Views+.swift */; };
@@ -24,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1367C21C23AA1E6C00B05CA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEDB42FF1D92557800BF092E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEDB43071D92557800BF092E;
+			remoteInfo = AlchemyUIKit;
+		};
 		DEDB43131D92557900BF092E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DEDB42FF1D92557800BF092E /* Project object */;
@@ -37,6 +49,13 @@
 		130E2446238E5FFC0047EEB7 /* AlchemyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemyTextView.swift; sourceTree = "<group>"; };
 		131C7A0722ECE68A0001E084 /* AlchemyCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemyCheckbox.swift; sourceTree = "<group>"; };
 		131C7A0922ECE72B0001E084 /* Sample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sample.storyboard; sourceTree = "<group>"; };
+		1367C20A23AA1E5F00B05CA4 /* AlchemyUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlchemyUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1367C20C23AA1E6000B05CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1367C20E23AA1E6000B05CA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1367C21123AA1E6000B05CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1367C21323AA1E6100B05CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1367C21623AA1E6100B05CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1367C21823AA1E6100B05CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13F2D5E522D63DDB006887B2 /* AlchemyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemyButton.swift; sourceTree = "<group>"; };
 		13F2D5E722D63E6A006887B2 /* Views+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views+.swift"; sourceTree = "<group>"; };
 		DEDB43081D92557800BF092E /* AlchemyUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlchemyUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +69,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1367C20723AA1E5F00B05CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEDB43041D92557800BF092E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,11 +94,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1367C20B23AA1E6000B05CA4 /* AlchemyUIApp */ = {
+			isa = PBXGroup;
+			children = (
+				1367C20C23AA1E6000B05CA4 /* AppDelegate.swift */,
+				1367C20E23AA1E6000B05CA4 /* ViewController.swift */,
+				1367C21023AA1E6000B05CA4 /* Main.storyboard */,
+				1367C21323AA1E6100B05CA4 /* Assets.xcassets */,
+				1367C21523AA1E6100B05CA4 /* LaunchScreen.storyboard */,
+				1367C21823AA1E6100B05CA4 /* Info.plist */,
+			);
+			path = AlchemyUIApp;
+			sourceTree = "<group>";
+		};
 		DEDB42FE1D92557800BF092E = {
 			isa = PBXGroup;
 			children = (
 				DEDB430A1D92557800BF092E /* AlchemyUIKit */,
 				DEDB43151D92557900BF092E /* AlchemyUIKitTests */,
+				1367C20B23AA1E6000B05CA4 /* AlchemyUIApp */,
 				DEDB43091D92557800BF092E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +122,7 @@
 			children = (
 				DEDB43081D92557800BF092E /* AlchemyUIKit.framework */,
 				DEDB43111D92557900BF092E /* AlchemyUIKitTests.xctest */,
+				1367C20A23AA1E5F00B05CA4 /* AlchemyUIApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +170,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1367C20923AA1E5F00B05CA4 /* AlchemyUIApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1367C21B23AA1E6100B05CA4 /* Build configuration list for PBXNativeTarget "AlchemyUIApp" */;
+			buildPhases = (
+				1367C20623AA1E5F00B05CA4 /* Sources */,
+				1367C20723AA1E5F00B05CA4 /* Frameworks */,
+				1367C20823AA1E5F00B05CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1367C21D23AA1E6C00B05CA4 /* PBXTargetDependency */,
+			);
+			name = AlchemyUIApp;
+			productName = AlchemyUIApp;
+			productReference = 1367C20A23AA1E5F00B05CA4 /* AlchemyUIApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		DEDB43071D92557800BF092E /* AlchemyUIKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEDB431C1D92557900BF092E /* Build configuration list for PBXNativeTarget "AlchemyUIKit" */;
@@ -171,10 +230,14 @@
 		DEDB42FF1D92557800BF092E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Sir Wellington";
 				TargetAttributes = {
+					1367C20923AA1E5F00B05CA4 = {
+						CreatedOnToolsVersion = 10.3;
+						ProvisioningStyle = Automatic;
+					};
 					DEDB43071D92557800BF092E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = D76X37A2FG;
@@ -195,6 +258,7 @@
 			knownRegions = (
 				English,
 				en,
+				Base,
 			);
 			mainGroup = DEDB42FE1D92557800BF092E;
 			productRefGroup = DEDB43091D92557800BF092E /* Products */;
@@ -203,11 +267,22 @@
 			targets = (
 				DEDB43071D92557800BF092E /* AlchemyUIKit */,
 				DEDB43101D92557900BF092E /* AlchemyUIKitTests */,
+				1367C20923AA1E5F00B05CA4 /* AlchemyUIApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1367C20823AA1E5F00B05CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1367C21723AA1E6100B05CA4 /* LaunchScreen.storyboard in Resources */,
+				1367C21423AA1E6100B05CA4 /* Assets.xcassets in Resources */,
+				1367C21223AA1E6000B05CA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEDB43061D92557800BF092E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -226,6 +301,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1367C20623AA1E5F00B05CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1367C20F23AA1E6000B05CA4 /* ViewController.swift in Sources */,
+				1367C20D23AA1E6000B05CA4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEDB43031D92557800BF092E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +334,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1367C21D23AA1E6C00B05CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEDB43071D92557800BF092E /* AlchemyUIKit */;
+			targetProxy = 1367C21C23AA1E6C00B05CA4 /* PBXContainerItemProxy */;
+		};
 		DEDB43141D92557900BF092E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DEDB43071D92557800BF092E /* AlchemyUIKit */;
@@ -257,7 +346,89 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		1367C21023AA1E6000B05CA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1367C21123AA1E6000B05CA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1367C21523AA1E6100B05CA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1367C21623AA1E6100B05CA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		1367C21923AA1E6100B05CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AlchemyUIApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.sirwellington.alchemy.AlchemyUIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1367C21A23AA1E6100B05CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AlchemyUIApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.sirwellington.alchemy.AlchemyUIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DEDB431A1D92557900BF092E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -429,6 +600,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1367C21B23AA1E6100B05CA4 /* Build configuration list for PBXNativeTarget "AlchemyUIApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1367C21923AA1E6100B05CA4 /* Debug */,
+				1367C21A23AA1E6100B05CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DEDB43021D92557800BF092E /* Build configuration list for PBXProject "AlchemyUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
