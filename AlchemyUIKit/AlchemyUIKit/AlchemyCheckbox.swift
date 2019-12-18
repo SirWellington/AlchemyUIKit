@@ -189,9 +189,8 @@ public class AlchemyCheckbox: UIControl
 //=========================================
 //MARK: DRAWING
 //=========================================
-private extension AlchemyCheckbox
+extension AlchemyCheckbox
 {
-    
     public override func draw(_ rect: CGRect)
     {
         //Draw the outlined component
@@ -205,12 +204,12 @@ private extension AlchemyCheckbox
         var shapePath: UIBezierPath
         switch self.borderStyle
         {
-        case .square:
-            shapePath = UIBezierPath(rect: newRect)
-        case .roundedSquare:
-            shapePath = UIBezierPath(roundedRect: newRect, cornerRadius: self.corderRadius)
-        case .rounded:
-            shapePath = UIBezierPath(ovalIn: newRect)
+            case .square:
+                shapePath = UIBezierPath(rect: newRect)
+            case .roundedSquare:
+                shapePath = UIBezierPath(roundedRect: newRect, cornerRadius: self.corderRadius)
+            case .rounded:
+                shapePath = UIBezierPath(ovalIn: newRect)
         }
         
         context.addPath(shapePath.cgPath)
@@ -224,20 +223,24 @@ private extension AlchemyCheckbox
             
             switch self.checkType
             {
-            case .square:
-                self.drawInnerSquare(frame: newRect)
+                case .square:
+                    self.drawInnerSquare(frame: newRect)
                 
-            case .circle:
-                self.drawCircle(frame: newRect)
+                case .circle:
+                    self.drawCircle(frame: newRect)
                 
-            case .cross:
-                self.drawCross(frame: newRect)
+                case .cross:
+                    self.drawCross(frame: newRect)
                 
-            case .tick:
-                self.drawCheckMark(frame: newRect)
+                case .tick:
+                    self.drawCheckMark(frame: newRect)
             }
         }
     }
+}
+
+private extension AlchemyCheckbox
+{
     
     //Draws tick inside the component
     func drawCheckMark(frame: CGRect)
